@@ -1,5 +1,33 @@
 import startCase from 'lodash/startCase';
 
+function createForm() {
+  // Create a div element
+  const div = document.createElement('div');
+
+  // Create a label element
+  const label = document.createElement('label');
+  label.setAttribute('for', 'name');
+  label.innerText = 'Enter your name:';
+
+  // Create an input element
+  const input = document.createElement('input');
+  input.setAttribute('type', 'text');
+  input.setAttribute('id', 'name');
+
+  // Create a button element
+  const button = document.createElement('button');
+  button.setAttribute('id', 'Submit');
+  button.innerText = 'Submit';
+
+  // Append label, input, and button to the div
+  div.appendChild(label);
+  div.appendChild(input);
+  div.appendChild(button);
+
+  // Append the div to the body
+  document.body.appendChild(div);
+}
+
 function greet(name) {
   // check if greeting already exists
   let greeting = document.getElementById('greeting');
@@ -20,7 +48,9 @@ function greet(name) {
 }
 
 export function getNameAndGreet() {
-  // TODO: Handle URL query parameters. Extract 'name' and populate textbox.
+  createForm();
+
+  // TODO:  Accept name in query string and show the greeting onload.
 
   // When the button is clicked, call the greet function
   const submitButton = document.getElementById('Submit');
