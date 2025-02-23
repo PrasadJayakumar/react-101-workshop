@@ -1,8 +1,9 @@
 import startCase from 'lodash/startCase';
 
-export function greet(name) {
+function greet(name) {
   // check if greeting already exists
   let greeting = document.getElementById('greeting');
+
   if (!greeting) {
     // create a paragraph tag with id "greeting" within body
     greeting = document.createElement('p');
@@ -18,7 +19,9 @@ export function greet(name) {
   console.log(`Hello, ${name}!`);
 }
 
-function getNameAndGreet() {
+export function getNameAndGreet() {
+  // TODO: Handle URL query parameters. Extract 'name' and populate textbox.
+
   // When the button is clicked, call the greet function
   const submitButton = document.getElementById('Submit');
   const handleClick = function () {
@@ -30,8 +33,3 @@ function getNameAndGreet() {
   submitButton.removeEventListener('click', handleClick);
   submitButton.addEventListener('click', handleClick);
 }
-
-// Ensure the DOM is fully loaded before adding the event listener
-document.addEventListener('DOMContentLoaded', function () {
-  getNameAndGreet();
-});

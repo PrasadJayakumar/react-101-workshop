@@ -8,7 +8,6 @@ In this assignment, you will learn how to install and use Lodash, a popular Java
 2. **Use Lodash**: Utilize Lodash to format a name in title case.
 3. **Optimize Build**: Understand how to optimize your build by including only the necessary parts of Lodash.
 
-
 ### Installation
 
 1. Open your terminal.
@@ -18,7 +17,7 @@ In this assignment, you will learn how to install and use Lodash, a popular Java
     ```sh
     npm install lodash
     ```
-
+    
 ### Usage
 
 1. **Import Lodash**: Import the [startCase](https://lodash.com/docs/4.17.15#startCase) function from Lodash in your JavaScript file.

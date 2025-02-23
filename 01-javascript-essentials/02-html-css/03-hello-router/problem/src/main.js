@@ -1,9 +1,6 @@
-import { greet } from './hello.js';
+import { getNameAndGreet } from './hello.js';
 
-
-
-// // Get the query string from the URL
-// console.log('Query String', window.location.search);
-// const urlParams = new URLSearchParams(window.location.search);
-// const name = urlParams.get('name');
-// console.log('Name', name);
+// Ensure the DOM is fully loaded before adding the event listener
+document.addEventListener('DOMContentLoaded', function () {
+    getNameAndGreet();
+});
