@@ -1,6 +1,6 @@
 # Hello Dev Server
 
-This project is a simple setup for a development server using Webpack and `webpack-dev-server`.
+This project is a simple setup for a development server using vite
 
 ## Steps to Bundle JavaScript Files
 
