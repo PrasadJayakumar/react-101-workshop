@@ -1,3 +1,5 @@
+// TODO: Import lodash
+
 function greet(name) {
   // check if greeting already exists
   let greeting = document.getElementById('greeting');
@@ -9,6 +11,7 @@ function greet(name) {
   }
 
   // show the greeting in paragraph tag
+  // TODO: Format the name in title case using lodash
   greeting.innerText = name;
 
   // show the greeting in console

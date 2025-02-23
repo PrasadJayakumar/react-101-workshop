@@ -26,5 +26,7 @@ export function getNameAndGreet() {
 
   // Remove any existing event listener before adding a new one
   submitButton.removeEventListener('click', handleClick);
+
+  // SOLUTION: When the button is clicked, call the greet function
   submitButton.addEventListener('click', handleClick);
 }

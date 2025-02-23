@@ -1,3 +1,4 @@
+// SOLUTION: Import lodash
 // import _ from 'lodash';
 import startCase from 'lodash/startCase';
 
@@ -12,6 +13,7 @@ export function greet(name) {
   }
 
   // show the greeting in paragraph tag
+  // SOLUTION: Format the name in title case using lodash
   // https://lodash.com/docs/4.17.15#startCase
   greeting.innerText = startCase(name) || 'No name provided';
 
