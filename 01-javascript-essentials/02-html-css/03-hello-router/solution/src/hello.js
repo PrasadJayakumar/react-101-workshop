@@ -50,9 +50,11 @@ function greet(name) {
 export function getNameAndGreet() {
   createForm();
 
-  // SOLUTION: Accept name in query string and show the greeting onload.
+  // SOLUTION: Accept name in query string
   const urlParams = new URLSearchParams(window.location.search);
   const name = urlParams.get('name');
+
+  // SOLUTION: Set the name in the input field
   document.getElementById('name').value = name;
 
   // When the button is clicked, call the greet function

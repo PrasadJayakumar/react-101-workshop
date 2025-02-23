@@ -50,7 +50,7 @@ function greet(name) {
 export function getNameAndGreet() {
   createForm();
 
-  // TODO:  Accept name in query string
+  // TODO: Accept name in query string
   // TODO: Set the name in the input field
 
   // When the button is clicked, call the greet function
