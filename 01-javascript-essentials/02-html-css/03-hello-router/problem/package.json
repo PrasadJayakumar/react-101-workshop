@@ -1,0 +1,21 @@
+{
+  "name": "hello-dev-server",
+  "version": "1.0.0",
+  "main": "./src/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "vite": "^6.1.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
