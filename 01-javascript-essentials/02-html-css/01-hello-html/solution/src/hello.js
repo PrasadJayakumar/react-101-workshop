@@ -1,15 +1,16 @@
 function greet(name) {
-  // SOLUTION: Show the greeting in paragraph tag
   let greeting = document.getElementById('greeting');
 
   if (!greeting) {
-    // create a paragraph tag with id "greeting" within body
+    // SOLUTION: Create a pragraph dynamically
     greeting = document.createElement('p');
     greeting.id = 'greeting';
+
+    // SOLUTION: Append the paragraph to the body
     document.body.appendChild(greeting);
   }
 
-  // show the greeting in paragraph tag
+  // SOLUTION: Show the greeting in the paragraph tag
   greeting.innerText = name;
 
   // show the greeting in console

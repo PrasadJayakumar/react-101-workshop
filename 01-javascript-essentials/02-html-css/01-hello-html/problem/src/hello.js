@@ -1,9 +1,12 @@
 function greet(name) {
-  // TODO: Show the greeting in paragraph tag
+  // TODO: Create a pragraph dynamically
+  // TODO: Append the paragraph to the body
+  // TODO: Show the greeting in the paragraph tag
+
   console.log(`Hello, ${name}!`);
 }
 
 export function getNameAndGreet() {
   // TODO: When the button is clicked, call the greet function
-  greet();
+  greet('World');
 }
