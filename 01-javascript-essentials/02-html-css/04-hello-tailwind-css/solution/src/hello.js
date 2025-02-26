@@ -4,7 +4,8 @@ function createForm() {
   // Create a div element
   const div = document.createElement('div');
   div.id = 'form-container';
-  // TODO: Set Tailwind CSS classes
+  // SOLUTION: Set Tailwind CSS classes
+  div.className = 'container p-4';
 
   // Create an input element
   const input = document.createElement('input');
@@ -12,14 +13,16 @@ function createForm() {
   input.setAttribute('id', 'name');
   input.setAttribute('placeholder', 'Enter your name');
 
-  // TODO: Set Tailwind CSS classes
+  // SOLUTION: Set Tailwind CSS classes
+  input.className = 'p-2 border rounded';
 
   // Create a button element
   const button = document.createElement('button');
   button.setAttribute('id', 'Submit');
   button.innerText = 'Submit';
 
-  // TODO: Set Tailwind CSS classes
+  // SOLUTION: Set Tailwind CSS classes
+  button.className = 'p-2 m-2 bg-blue-500 text-white rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500';
 
   // Append input and button to the inputButtonContainer
   div.appendChild(input);
@@ -28,7 +31,8 @@ function createForm() {
   // create a paragraph tag with id "greeting" within body
   const greeting = document.createElement('p');
   greeting.id = 'greeting';
-  // TODO: Set Tailwind CSS classes
+  // SOLUTION: Set Tailwind CSS classes
+  greeting.className = 'p-2 mt-4 text-xl font-semibold text-gray-800 h-6';
 
   // Append label, input, and button to the div
   div.appendChild(greeting);

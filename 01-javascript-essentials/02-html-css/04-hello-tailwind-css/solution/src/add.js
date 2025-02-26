@@ -6,7 +6,8 @@ function createTextBox(id, placeholder, value) {
     textBox.setAttribute('placeholder', placeholder);
     textBox.setAttribute('value', value);
 
-    // TODO: Set Tailwind CSS classes
+    // SOLUTION: Set Tailwind CSS classes
+    textBox.className = 'border rounded p-2';
 
     return textBox;
 }
@@ -15,7 +16,8 @@ function createSpanElement(textContent) {
     const span = document.createElement('span');
     span.textContent = textContent;
 
-    // TODO: Set Tailwind CSS classes
+    // SOLUTION: Set Tailwind CSS classes
+    span.className = 'mx-2';
 
     return span;
 }
@@ -23,7 +25,8 @@ function createSpanElement(textContent) {
 function createForm(a, b, sum) {
     // Create a container
     const container = document.createElement('div');
-    // TODO: Set Tailwind CSS classes
+    // SOLUTION: Set Tailwind CSS classes
+    container.className = 'container p-4';
     document.body.appendChild(container);
 
     // Create textbox for a

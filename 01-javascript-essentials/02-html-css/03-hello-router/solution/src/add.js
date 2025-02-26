@@ -19,7 +19,6 @@ export function renderAddContainer() {
 
     // Create a container
     const container = document.createElement('div');
-    container.setAttribute('class', 'container');
     document.body.appendChild(container);
 
     // Create textbox for a
@@ -35,6 +34,4 @@ export function renderAddContainer() {
     // Create textbox for sum
     const textBoxSum = createTextBox('txtSum', 'Sum', sum);
     container.appendChild(textBoxSum);
-
-
 }
