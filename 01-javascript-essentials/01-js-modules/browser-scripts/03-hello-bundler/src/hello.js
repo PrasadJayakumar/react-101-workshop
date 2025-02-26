@@ -2,7 +2,7 @@ function greet(name) {
   alert(`Hello, ${name}!`);
 }
 
-function getNameAndGreet() {
+export function renderHelloContainer() {
   const name = prompt("Enter your name:");
   if (name) {
     greet(name);

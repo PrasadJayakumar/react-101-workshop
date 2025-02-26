@@ -1,3 +1,3 @@
-import { getNameAndGreet } from './hello.js';
+import { renderHelloContainer } from './hello.js';
 
-getNameAndGreet();
+renderHelloContainer();

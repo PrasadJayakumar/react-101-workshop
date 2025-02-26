@@ -1,4 +1,4 @@
-function greet() {
+function renderHelloContainer() {
   // prompt(): Gets input from the user.
   const name = prompt("Enter your name:");
 
@@ -8,4 +8,4 @@ function greet() {
   }
 }
 
-greet();
+renderHelloContainer();

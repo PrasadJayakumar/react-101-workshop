@@ -52,7 +52,7 @@ function greet(name) {
   console.log(`Hello, ${name}!`);
 }
 
-export function getNameAndGreet() {
+export function renderHelloContainer() {
   createForm();
 
   const urlParams = new URLSearchParams(window.location.search);

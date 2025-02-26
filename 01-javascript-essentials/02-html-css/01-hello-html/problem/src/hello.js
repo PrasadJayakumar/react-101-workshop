@@ -6,7 +6,7 @@ function greet(name) {
   console.log(`Hello, ${name}!`);
 }
 
-export function getNameAndGreet() {
+export function renderHelloContainer() {
   // TODO: When the button is clicked, call the greet function
   greet('World');
 }

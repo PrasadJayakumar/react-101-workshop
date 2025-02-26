@@ -17,7 +17,7 @@ function greet(name) {
   console.log(`Hello, ${name}!`);
 }
 
-export function getNameAndGreet() {
+export function renderHelloContainer() {
   // When the button is clicked, call the greet function
   const submitButton = document.getElementById('Submit');
   const handleClick = function () {
