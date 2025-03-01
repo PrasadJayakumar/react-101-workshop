@@ -1,0 +1,8 @@
+{
+    "name": "react-101-workshop",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces": [
+        "01-javascript-essentials/**"
+    ]
+}
