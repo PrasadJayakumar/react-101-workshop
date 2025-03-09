@@ -1,0 +1,23 @@
+{
+  "name": "08-hello-vite",
+  "version": "1.0.0",
+  "description": "This project demonstrates how to bundle JavaScript files using Webpack.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^6.2.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
