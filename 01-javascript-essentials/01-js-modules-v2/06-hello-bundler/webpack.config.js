@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
     entry: './src/main.js',
     output: {
@@ -8,7 +10,10 @@ module.exports = {
         rules: []
     },
     resolve: {
-        extensions: ['.js']
+        extensions: ['.js'],
+        alias: {
+            TimeUtils: path.resolve(__dirname, 'lib/timeUtils.js')
+        }
     },
     mode: 'development'
 };
