@@ -2,6 +2,7 @@
     "name": "react-101-workshop",
     "version": "1.0.0",
     "private": true,
+    "type": "module",
     "workspaces": [
         "01-javascript-essentials/**"
     ]
