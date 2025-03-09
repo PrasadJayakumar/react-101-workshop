@@ -35,6 +35,33 @@ function createForm(onSubmit) {
   });
 }
 
+function createFormV2(onSubmit) {
+  // <div>
+  //   <label for="name">Enter your name:</label>
+  //   <!-- Create a textbox for the user to enter their name -->
+  //   <input type="text" id="name" />
+  //   <!-- Create a button for the user to click -->
+  //   <button id="Submit">Submit</button>
+  // </div>
+
+  const div = document.createElement('div');
+  div.style = 'flex-direction: row; display: flex; gap: 10px;';
+  div.innerHTML = `
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" />
+    <button id="submit">Submit</button>
+  `;
+
+  const input = div.querySelector('input');
+  const button = div.querySelector('button');
+  button.addEventListener('click', () => {
+    onSubmit(input.value);
+    div.remove();
+  });
+
+  document.body.appendChild(div);
+}
+
 export function showGreetingPrompt() {
   try {
 
@@ -58,7 +85,8 @@ export function showGreetingPrompt() {
     }
 
     // Gets input from the user.
-    createForm(handleFormSubmit);
+    // createForm(handleFormSubmit);
+    createFormV2(handleFormSubmit);
   } catch (error) {
     console.error('Error displaying greeting:', error);
     alert('Sorry, something went wrong. Please try again.');
