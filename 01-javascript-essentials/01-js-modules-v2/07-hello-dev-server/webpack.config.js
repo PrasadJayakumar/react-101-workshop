@@ -1,3 +1,4 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -10,7 +11,10 @@ module.exports = {
         rules: []
     },
     resolve: {
-        extensions: ['.js']
+        extensions: ['.js'],
+        alias: {
+            TimeUtils: path.resolve(__dirname, 'lib/timeUtils.js')
+        }
     },
     plugins: [
         new HtmlWebpackPlugin({
