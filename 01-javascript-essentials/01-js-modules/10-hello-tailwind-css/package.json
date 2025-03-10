@@ -1,5 +1,5 @@
 {
-  "name": "08-hello-vite",
+  "name": "10-hello-tailwind-css",
   "version": "1.0.0",
   "description": "This project demonstrates how to bundle JavaScript files using Webpack.",
   "main": "index.js",
@@ -16,9 +16,10 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@tailwindcss/vite": "^4.0.12",
     "vite": "^6.2.1"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash-es": "^4.17.21"
   }
 }

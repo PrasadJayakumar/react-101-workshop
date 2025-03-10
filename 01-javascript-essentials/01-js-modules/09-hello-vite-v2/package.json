@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This project demonstrates how to bundle JavaScript files using Webpack.",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "lib": "lib"
   },
